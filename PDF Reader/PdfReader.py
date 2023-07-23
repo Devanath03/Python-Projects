@@ -2,7 +2,7 @@ import pyttsx3
 import pdfplumber
 import PyPDF2
 
-file = 'PdfReader.pdf'
+file = 'D:\Python Projects\PDF Reader\PdfReader.pdf'
 
 pdfObj = open(file,'rb')
 
