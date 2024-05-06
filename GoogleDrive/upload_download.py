@@ -63,7 +63,6 @@ def sync_folder(local_folder, gdrive_folder_name):
         else:
             print("{0} Exist".format(filename))
 
-
     # download files that exist on Google Drive but not locally
     for filename, file_id in drive_filenames.items():
         if filename not in [os.path.basename(f) for f in glob.glob(os.path.join(local_folder, '*'))]:
