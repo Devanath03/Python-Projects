@@ -12,7 +12,7 @@ import io
 SCOPES = 'https://www.googleapis.com/auth/drive'
 CREDENTIAL_FILE = 'D:\Python Projects\GoogleDrive\gdrive_sync_credential.json'
 TOKEN_FILE = 'gdrive_sync_token.json'
-FOLDER_ID = '175RfWggTCeCTBIf61mVfaicfByCvK5Fk'  # Replace with your folder ID
+FOLDER_ID = '175RfWggTCeCTBIf61mVfaicfByCvK5Fk'   # Replace with your folder ID
 
 def sync_folder(local_folder, gdrive_folder_name):
     store = oauth2file.Storage(TOKEN_FILE)
