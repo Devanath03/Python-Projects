@@ -79,4 +79,4 @@ if __name__ == '__main__':
             # Update the last synchronization time
             last_sync_time = datetime.now()
         # Wait for the next synchronization interval
-        time.sleep(10) # Sleep for 1 seconds before checking again
+        time.sleep(10)  # Sleep for 1 seconds before checking again
