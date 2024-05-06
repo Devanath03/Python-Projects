@@ -46,7 +46,6 @@ def sync_folder(local_folder, gdrive_folder_name):
         drive_filenames[_file.get('name')] = _file.get('id')
     print("drive_filenames={0}".format(len(drive_filenames)))
 
-
     # only upload new files
     for _file in glob.glob(os.path.join(local_folder, '*')):
         filename = os.path.basename(_file)
