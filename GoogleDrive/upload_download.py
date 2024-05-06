@@ -34,7 +34,7 @@ def sync_folder(local_folder, gdrive_folder_name):
         }
         folder = drive_service.files().create(body=file_metadata, fields='id').execute()
     else:
-        # Use the existing folder
+         # Use the existing folder
         print("'{0}'' found".format(gdrive_folder_name))
         folder = items[0]
     folder_id = folder.get('id')
