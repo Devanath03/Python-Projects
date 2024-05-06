@@ -39,7 +39,7 @@ def sync_folder(local_folder, gdrive_folder_name):
         folder = items[0]
     folder_id = folder.get('id')
     print("folderId={0}".format(folder_id))
-    # check files on gdrive
+     # check files on gdrive
     response = drive_service.files().list(q="'{folderId}' in parents and trashed=false".format(folderId=folder_id)).execute()
     drive_filenames = {}
     for _file in response.get('files', []):
