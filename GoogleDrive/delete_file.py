@@ -22,7 +22,7 @@ def sync_folder(local_folder, gdrive_folder_name):
         creds = tools.run_flow(flow, store)
     service = build('drive', 'v3', http=creds.authorize(Http()))
     drive_service = service
-    # Check if the folder already exists
+    # Check if the folder already exists.
     response = drive_service.files().list(q="name='{name}' and mimeType='application/vnd.google-apps.folder' and trashed=false".format(name=gdrive_folder_name)).execute()
     items = response.get('files', [])
     if not items:
