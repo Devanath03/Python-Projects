@@ -85,7 +85,7 @@ if __name__ == '__main__':
     last_sync_time = datetime.now() - timedelta(minutes=interval_minutes)
     
     while True:
-        # Check if enough time has passed since the last synchronization
+        # Checking enough time has passed since the last synchronization
         if datetime.now() - last_sync_time >= timedelta(minutes=interval_minutes):
             # Synchronize the folder
             sync_folder(local_folder, gdrive_folder_name)
