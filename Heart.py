@@ -10,4 +10,4 @@ right(140)
 circle(50,200)
 forward(133)
 end_fill()
-time.sleep(3)1234567890123456
+time.sleep(3)12345678901234567
