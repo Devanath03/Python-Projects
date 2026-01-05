@@ -8,4 +8,4 @@ password = ""
 for x in range (8):
      password = password + random.choices(pass1)[0]
 
-print('Your password is : ',password)1234567890
+print('Your password is : ',password)12345678901
