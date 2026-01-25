@@ -16,4 +16,8 @@ ping_result = test.results.ping
 print(f"Download speed : {download_result / 1024 / 1024:.2f} Mbs")
 print(f"Upload speed : {upload_result / 1024 / 1024:.2f} Mbs")
 print(f"Ping : {ping_result:.2f} ms")
+<<<<<<< HEAD
+12345678901
+=======
 1234567890
+>>>>>>4229eb486716b06377de9b3ade80a60593
